@@ -11,11 +11,17 @@ Nginx through routing Django project
 git clone https://github.com/LondheShubham153/django-notes-app.git
 
 2. sudo apt update
+
    sudo apt get insatll docker.io
+
    sudo usermod -aG docker $USER
+
    sudo reboot
+
    docker ps
-   docker build -t notes-app .
+# Build the app
+    docker build -t notes-app .
+# RUN the app
    docker run -d -p 8000:8000 notes-app:latest
    curl -L http://127.0.0.1:8000
    
@@ -24,7 +30,7 @@ git clone https://github.com/LondheShubham153/django-notes-app.git
 
   sudo apt-get update sudo apt install nginx
 
-4.cd
+3.cd
   cd /etc/nginx/sites-enabled/
   ls
   sudo vim default
