@@ -9,6 +9,7 @@ Nginx through routing Django project
 # Installation
 1.Clone the repository
 git clone https://github.com/LondheShubham153/django-notes-app.git
+
 2. sudo apt update
    sudo apt get insatll docker.io
    sudo usermod -aG docker $USER
@@ -17,6 +18,7 @@ git clone https://github.com/LondheShubham153/django-notes-app.git
    docker build -t notes-app .
    docker run -d -p 8000:8000 notes-app:latest
    curl -L http://127.0.0.1:8000
+   
 # Nginx Installation
   Install Nginx reverse proxy to make this application available
 
@@ -44,8 +46,12 @@ git clone https://github.com/LondheShubham153/django-notes-app.git
 }
 
   sudo systemctl restart nginx
+  
   cd django-notes-app/
+  
   cd mynotes/
+  
   cd build/
+  
   sudo cp -r * /var/www/html/
   
